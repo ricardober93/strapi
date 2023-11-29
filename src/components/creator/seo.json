@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_creator_seos",
+  "info": {
+    "displayName": "SEO",
+    "icon": "feather"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "keywords": {
+      "type": "string"
+    }
+  }
+}

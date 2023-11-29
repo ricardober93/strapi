@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "articles",
+  "info": {
+    "singularName": "article",
+    "pluralName": "articles",
+    "displayName": "Article",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "publishAt": {
+      "type": "date"
+    },
+    "capitulo": {
+      "displayName": "podcats",
+      "type": "component",
+      "repeatable": false,
+      "component": "creator.podcats"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "seo": {
+      "displayName": "SEO",
+      "type": "component",
+      "repeatable": false,
+      "component": "creator.seo"
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::tag.tag",
+      "mappedBy": "articles"
+    },
+    "author": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::author.author",
+      "inversedBy": "articles"
+    },
+    "content": {
+      "type": "richtext"
+    }
+  }
+}

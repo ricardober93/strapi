@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_creator_urls",
+  "info": {
+    "displayName": "url",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "slug": {
+      "type": "string"
+    }
+  }
+}
